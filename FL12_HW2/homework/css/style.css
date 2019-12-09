@@ -47,7 +47,7 @@
     line-height: 30px;
 }
 
-.tm-section-title:hover {
+#about .tm-section-title:hover {
     background-color: lightgrey;
     color: lightskyblue;
     font-style: italic;
@@ -228,4 +228,5 @@ section.tm-content-box {
     .carousel-content {
         margin-left: 45px;
     }
+
 }
