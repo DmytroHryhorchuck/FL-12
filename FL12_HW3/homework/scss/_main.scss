@@ -1,0 +1,235 @@
+
+body {
+  background-color: $body-bg-color;
+}
+$font-weight: (
+  boldest: 900,
+  bold: 700,
+);
+.header {
+    background: $background-image center center no-repeat;
+    border-radius: 0% 0% 30% 70% / 100% 60% 40% 0%;
+    height: 590px;
+    .header-wrap {
+        width: 85%;
+        margin: 0 auto;
+    
+      
+        .header_text{
+     color: $header_text_color;
+        white-space: pre-line;
+        font-family: $header-text-font-family;
+        font-size: 14px;
+        
+        }
+        .header_heading {
+            margin: 10px 0 50px 0;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 60px;
+            font-weight: map-get($font-weight, boldest);
+            width:500px;
+            position: relative;
+            z-index: 2;
+            color: $logo_header-heading-color;
+            line-height: 60px;
+          
+            &::after {
+content: "";
+position: absolute;
+left: 0px;
+bottom: -2px;
+z-index: -1;
+width: 252px;
+height: 46px;
+background-color: $header-heading-mark;
+            }
+
+        }
+        }
+}
+.landing-logo{
+  display: flex;
+              align-items: center; 
+              img {
+                  width: 40px;
+                  height: 40px;
+              }        
+  p { 
+width: 80px;
+color: $logo_header-heading-color;
+display: flex;
+flex-direction: column;
+justify-content: center;
+font-size: 18px;
+font-weight: map-get($font-weight, bold);
+text-align: center;
+font-family: $logo-text;
+line-height: 20px;
+
+span {
+font-size: 10px;
+  }
+}
+}
+@mixin button_join {
+   width: 120px;
+height: 40px;
+background-color: $button-join-color;
+color: $color-wite;
+border: none;
+border-radius: 2px;
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 15px;
+font-weight: map-get($font-weight, bold);
+  }
+  .header_button {
+    @include button_join;
+    margin-top: 60px;
+  
+  }
+.login {
+  margin-left: 120px;
+  color: $color-wite;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  font-family: $font-family-Source-sanse-pro;
+}
+.section_text{
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  position: relative;
+  color: $section-text;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 580px;
+    bottom: 7px;
+    z-index: -1;
+    width: 160px;
+    height: 45px;
+    background-color: $header-heading-mark;
+                }
+}
+.section_card{
+  width: 60%;
+  height: 220px;
+  background-color: $section-card-bg;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding: 15px;
+  display: flex;
+  border-radius: 5px;
+  .section_card_img{
+    width: 40%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  .section_card_right_container{
+    width: 45%;
+    text-align: center;
+    color: #D7D0AF;
+     margin-left: 60px;
+    .section_card_heading{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 20px;
+      font-weight: map-get($font-weight, bold);
+      margin: 35px 0 40px 0;
+    }
+    .section_card_text{
+      font-family: $section_card_text-font-family;
+color: #BBBEC9;
+text-align: justify;
+font-size: 14px;
+
+    }
+  }
+}
+
+@mixin section-link{
+  color: #BBBEC9;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 13px;
+}
+
+.section_link{
+  @include section-link;
+}
+.section_banner {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin: 120px auto -50px ;
+  background: $background-section_banner;
+  border-radius: 5px;
+  z-index: 2;
+    .section_banner_text_wrap {
+    width: 50%;
+    padding: 10px 150px;
+    font-family: 'Source Sans Pro', sans-serif;
+    z-index: 4;
+    .section_banner_heading {
+      font-weight: map-get($font-weight, bold);
+      font-size: 26px;
+      font-family: 'Source Sans Pro', sans-serif;
+      color: $section_banner_heading;
+      margin:10px 0 10px 0;
+      position: relative;
+      &::after {
+        @extend .section_text::after;
+        left: 103px;
+        bottom: 3px;
+        z-index:-1;
+        width: 57px;
+        height: 40px;
+   
+                    }
+    }
+    .section_banner_text{
+      color: #BEC2CA;
+      font-size: 14px;
+      font-weight: 500;
+      font-family: $section_banner_text_font_family;
+      
+    }
+  }
+  .section_banner_button{
+    @include button_join;
+   margin-right: 170px; 
+  
+  }
+ }
+.footer{
+  height: 200px;
+  background-color: $footer-bg;
+ z-index: -1;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  
+ }
+ .footer-wrap {
+   width:100%;
+display: flex;
+justify-content: space-around;
+margin-top: 50px;
+color: #B9C3B3;
+font-family: $footer-wrap_text_font_family;
+ }
+ .footer_text{
+   width: $footer_text_size;
+   font-size: 12px;
+ }
+ .footer-cr {
+display: flex;
+align-items: center;
+font-size:14px;
+margin-left: 70px;
+ }
+.footer_logo{
+  p {
+    color: #B9C3B3;
+  }
+}
