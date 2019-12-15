@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+  height: 60px;
+  width: 100%;
+  background-color: #FFF;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+ }
+.header_container{
+    height: 100vh;
+}
+.header_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+.nav_list{
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+}
+.nav_list_item{
+    list-style: none;
+}
+.nav_list_item_link{
+    text-decoration: none;
+    color: #777;
+    
+}
+.nav_list_item_link:hover{
+    color: #bfba55;
+}
+.logo{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color:#565655;
+    letter-spacing: 3px;
+}
+.top_section {
+    background: top  center url(../img/home-bg.jpg);
+ height: 700px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1 {
+    color: #FFF;
+    font-size: 60px;
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+  
+}
+.top_section p {
+    color: #bfba55;
+}
+.top_section button {
+    width: 140px;
+    height: 45px;
+    background-color: #FFF;
+    text-transform: uppercase;
+    border-radius: 30px;
+    font-size: 10px;
+    border: 1px solid #565655;
+    margin-top: 30px;
+}
+.stories_container{
+    width: 65%;
+    margin: 0 auto;
+}
+.story {
+margin-top: 100px;
+}
+.story_coments_details{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    color: #777;
+}
+.story_image{
+       display: block;
+       width: 100%;
+}
+.story_coments_details_photo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.autor_coments {
+    font-size: 17px;
+    color: #777;
+}
+.story_button {
+    width: 180px;
+    height: 45px;
+    border-radius: 30px;
+    font-size: 10px;
+    border: 1px solid #565655;
+    background-color: #FFF;
+    color: #777;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.story hr {
+    margin-top: 50px;
+    background-color: #777;
+}
+footer {
+    background-color: black;
+    height: 250px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+.footer_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+    margin: 0 auto;
+    color:  #777;
+    font-size: 14px;
+}
+.footer_title {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 900;
+}
+.organization_about {
+width: 335px;
+}
+.organization_adress {
+    width: 300px;
+}
