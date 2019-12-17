@@ -4,18 +4,18 @@ body {
 }
 
 header{
-  height: 60px;
+ 
   width: 100%;
   background-color: #FFF;
   position: fixed;
   z-index: 999;
   top: 0;
+  display: flex;
+  justify-content: center;
  }
-.header_container{
-    height: 100vh;
-}
 .header_wrap{
     display: flex;
+    height: 10vh;
     align-items: center;
     justify-content: space-between;
     width: 80%;
@@ -46,8 +46,9 @@ header{
 }
 .top_section {
     background: top  center url(../img/home-bg.jpg);
- height: 700px;
-    margin: 60px auto;
+    background-size: cover;
+ height: 90vh;
+    margin: 10vh auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,8 +141,8 @@ footer {
     font-weight: 900;
 }
 .organization_about {
-width: 335px;
+max-width: 335px;
 }
 .organization_adress {
-    width: 300px;
+   max-width: 300px;
 }
