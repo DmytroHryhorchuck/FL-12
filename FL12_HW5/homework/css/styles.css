@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: roboto;
+    background-color: #0b192f;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    background-color: #024161;
+    min-height: 100px;
+    align-items: center;
+}
+
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 50px 0 30px;
+}
+
+.headerContainerLogo {
+    color: #fff;
+    font-size: 40px;
+}
+
+.headerContainerLogo span {
+    color: #CB2867;
+}
+
+nav {
+    width: 30%;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav_list_item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 110%;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.nav_list_item_link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    height: 100px;
+    display: block;
+    align-items: center;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.nav_list_item:hover {
+    background-color: #1f52a4;
+    cursor: pointer;
+}
+
+.postHeader {
+    margin-top: 20px;
+    min-height: 435px;
+    background: bottom center url(../img/post0.jpg);
+    background-size: cover;
+}
+
+.postHeaderTitleWrap {
+    padding: 250px 50px 50px 30px;
+    width: 67%;
+    color: #fff;
+}
+
+.postHeaderTitle {
+    font-size: 55px;
+}
+
+.postHeaderText {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.mainContentWrap {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainContent {
+    width: 75%;
+}
+
+.sidebar {
+    width: 23%;
+}
+
+.postContainer {
+    display: flex;
+    color: #fff;
+    background-color: #fff;
+}
+
+.postContainerImg {
+    width: 49.5%;
+    min-height: 335px;
+}
+
+.postContainerBlock:hover,
+.postContainerImg:hover,.postContainerBlockFooter:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.postContainerBlock {
+    width: 50.5%;
+    min-height: 335px;
+}
+
+.postContainerBlockTitle {
+    font-size: 3.5vw;
+    margin-top: 20px;
+}
+
+.postContainerBlockWrap {
+    display: flex;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0.15;
+}
+
+.dateDay {
+    font-size: 4vw;
+}
+
+.dateMonth {
+    font-size: 2vw;
+}
+
+.postContainerBlock {
+    padding: 25px 25px 25px 50px;
+}
+
+.postContainerBlockText {
+    margin-top: 20px;
+    line-height: 31px;
+    width: 81%;
+}
+
+.sideBarImg {
+    width: 100%;
+}
+
+.sidebarNewsTextBlock {
+    padding: 50px 35px;
+}
+
+.sidebarNewsTextBlockTitle {
+    font-size: 30px;
+}
+
+.sidebarNewsTextBlockText {
+    margin-top: 15px;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.sidebarNews {
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.postContainer:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.postContainer:nth-child(even) .postContainerBlockWrap {
+    flex-direction: row-reverse;
+}
+
+.postContainer:nth-child(even) .postContainerBlock {
+    padding: 25px 50px 25px 45px;
+}
+
+.postContainer:nth-child(even) .postContainerBlockText {
+    width: 85%;
+    margin-left: 65px;
+}
+
+.greenbg {
+    background-color: #9bb800;
+}
+
+.orangebg {
+    background-color: #ed5120
+}
+
+.violetbg {
+    background-color: #9d27b0;
+    min-height: 335px;
+}
+
+.postContainerBlockFooter {
+    width: 100%;
+    background-color: #2d95bb;
+    color: #fff;
+    padding-bottom: 25px;
+    display: flex;
+}
+
+.postContainerBlockFooter .postContainerBlockWrap {
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.postContainerBlockFooter .postContainerBlockTitle {
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.postContainerBlockFooter .postContainerBlockText {
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 83%;
+    font-size: 16px;
+}
+
+.postContainerBlockFooter .date {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+footer {
+    min-height: 100px;
+    margin-top: 20px;
+    background-color: #024161;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+}
+
+.copyright,
+.design {
+    white-space: pre-line
+}
+
+.tabletNav {
+    display: none;
+}
+
+.line {
+    width: 40px;
+    height: 5px;
+}
+
+.tabletNav1line {
+    background-color: #fff;
+}
+
+.tabletNav2line {
+    background-color: #7295A7;
+}
+
+.tabletNav3line {
+    background-color: #A8BEC9;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    .tabletNav {
+        display: flex;
+        flex-direction: column;
+        height: 25px;
+        justify-content: space-between;
+    }
+    .headerContainer {
+        flex-direction: column-reverse;
+        height: 200px;
+        justify-content: space-around;
+    }
+    .postHeaderTitleWrap {
+        width: 75%;
+    }
+    .postHeaderText {
+        font-size: 16px;
+    }
+    .postContainer {
+        flex-wrap: wrap;
+    }
+    .postContainerBlock,
+    .postContainerImg {
+        width: 100%;
+    }
+    .postContainer:nth-child(even) .postContainerBlockWrap {
+        flex-direction: column-reverse;
+    }
+    .postContainerBlockText {
+        width: 95%;
+    }
+    .postContainerBlockWrap {
+        justify-content: space-between;
+    }
+    .postContainerBlockTitle {
+        font-size: 5.5vw;
+    }
+    .dateDay {
+        font-size: 6vw;
+    }
+    .dateMonth {
+        font-size: 4vw;
+    }
+    .postContainer:nth-child(even) .postContainerBlockText {
+        margin-left: 0;
+        text-align: left;
+    }
+    .date {
+        width: 20%;
+    }
+    .postContainer:nth-child(even) .postContainerBlockTitle {
+        width: 75%;
+        text-align: left;
+    }
+    .postContainer:nth-child(even) .postContainerBlockWrap {
+        flex-direction: row;
+    }
+    .postContainerBlockFooter {
+        flex-direction: column;
+    }
+    .postContainerBlockFooter .date {
+        margin: 0 auto;
+        margin-top: 35px;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .mainContent {
+        width: 70%;
+    }
+    .sidebar {
+        width: 28%;
+    }
+    .sidebarNewsTextBlockTitle {
+        font-size: 20px;
+    }
+    .sidebarNewsTextBlockText {
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .sidebarNewsTextBlock {
+        padding: 15px;
+    }
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainContentWrap {
+        flex-direction: column;
+    }
+    .mainContent,
+    .sidebar {
+        width: 100%;
+    }
+    .postContainerBlockTitle {
+        font-size: 45px;
+    }
+    .dateDay {
+        font-size: 50px;
+    }
+    .dateMonth {
+        font-size: 30px;
+    }
+    footer {
+        padding: 20px;
+        color: #4F6B89;
+    }
+}
