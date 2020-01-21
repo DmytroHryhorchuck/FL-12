@@ -18,9 +18,12 @@ this.getAgility = function getAgility () {
   return fighterObj.agility;
 };
 this.attack = function attack (defender) {
-   let probabilityOfSuccess = defender.getAgility() + defender.getStrength();
-  let randomPercent = Math.floor(Math.random() * 101);
-  if (randomPercent > probabilityOfSuccess) {
+  let maxChance = 100;
+   let probabilityOfSuccess = maxChance - (defender.getAgility() + defender.getStrength());
+   console.log(probabilityOfSuccess);
+  let randomPercent = Math.floor(Math.random() * maxChance);
+  console.log(randomPercent);
+  if (randomPercent < probabilityOfSuccess) {
     defender.dealDamage(this.getDamage());
         console.log(`${fighterObj.name} mackes ${fighterObj.damage} damage to ${defender.getName()}`);          
   } else {
@@ -76,3 +79,4 @@ const myFighter2 = new Fighter(
 })
 
 
+battle(myFighter, myFighter2)
