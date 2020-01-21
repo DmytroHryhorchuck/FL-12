@@ -18,9 +18,9 @@ this.getAgility = function getAgility () {
   return fighterObj.agility;
 };
 this.attack = function attack (defender) {
-   let probabilityOfSuccess = 100 - defender.getAgility() - defender.getStrength();
+   let probabilityOfSuccess = defender.getAgility() + defender.getStrength();
   let randomPercent = Math.floor(Math.random() * 101);
-  if (randomPercent <= probabilityOfSuccess) {
+  if (randomPercent > probabilityOfSuccess) {
     defender.dealDamage(this.getDamage());
         console.log(`${fighterObj.name} mackes ${fighterObj.damage} damage to ${defender.getName()}`);          
   } else {
@@ -42,7 +42,8 @@ this.addWin = function addWin(){
 this.addLoss = function addLoss(){
   fighterObj.loses++
 }
-this.battle = function battle(...fightersOblects){
+} 
+function battle(...fightersOblects){
   for (let fighter of fightersOblects) {
     if (!fighter.getHealth()) {
       console.log(`${fighter.getName()} is dead and can't fight`);
@@ -58,7 +59,7 @@ this.battle = function battle(...fightersOblects){
   fightersOblects[1 - aliveFighter].addWin();
   fightersOblects[aliveFighter].addLoss();
   }
-} 
+
 const myFighter = new Fighter(
     {name: 'Maximus', 
     damage: 25, 
