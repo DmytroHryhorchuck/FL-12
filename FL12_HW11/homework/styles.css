@@ -1,0 +1,17 @@
+.folderChild{
+    padding-left: 20px;
+    display: none;
+}
+.itemWrap:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+.folder span{
+    color: gold;
+}
+.film span{
+    color: grey;
+}
+.emptyFolder{
+    font-style: italic;
+}
