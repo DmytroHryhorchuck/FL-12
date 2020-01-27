@@ -1,0 +1,31 @@
+#addNewPage,#editPage{
+    display: none;
+}
+.mainPageWrap{
+    display: flex;
+    justify-content: space-between;
+}
+#addNew{
+width: 100px;
+height: 50px;
+}
+h1{
+    text-align: center;
+}
+#termValue{
+    font-style: bold;
+}
+#termDefenitionWrap{
+    display: none;
+    margin-bottom: 30px;
+}
+.setNameWrap{
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 300px;
+margin: 0 auto;
+}
+#removeButton{
+    margin-left: 10px;
+}
