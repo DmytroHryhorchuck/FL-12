@@ -1,0 +1,16 @@
+.header{
+    grid-area: h;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border: 4px solid green;
+     }
+    .header img {
+      width: 50px;
+      margin-left: 20px;
+    }
+    .header p {
+      color: green;
+      font-style: italic;
+      font-size: 35px;
+    }
